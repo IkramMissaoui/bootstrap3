@@ -1,0 +1,310 @@
+* {
+	box-sizing: border-box;
+}
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	border: 7px solid #3f4041;
+	box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(45deg, #060606, #d60303, #3399ff, #79ff79);
+	border-radius: 3px;
+}
+/* Navbar */
+nav {
+	background-color: #222222 !important;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	border-bottom: 3px solid #868686 !important;
+}
+.navbar a {
+	color: #ffffff !important;
+	opacity: 0.7;
+}
+.navbar a:hover {
+	opacity: 1;
+	background-color: #111111 !important;
+}
+/* end navbar */
+/* header */
+.header {
+	height: 100vh;
+	width: 100%;
+	padding: 30px 0 30px;
+	background-image: url(../images/elegant-white-background-with-shiny-lines_1017-17580.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header .container i {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	font-size: 25px;
+	background-color: #f13636;
+	color: white;
+	padding: 8px 10px 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease-in-out;
+	z-index: 999;
+}
+.header .container i:hover {
+	background: #d60303;
+	transition: .5s;
+}
+.header img {
+	height: 350px;
+	width: 450px;
+	margin: 70px 0 0 40px;
+}
+.header h1 {
+	font-size: 30px;
+	font-weight: 70px;
+	padding-top: 30px;
+}
+.header h1,
+.header p,
+.header button {
+	margin-top: 30px;
+}
+.header button {
+	border-radius: 5px;
+	margin: 40px 20px;
+}
+@media (max-width: 768px) {
+	.header {
+		padding: 30px;
+		height: 750px;
+	}
+	.header img {
+		width: 90%;
+		height: 250px;
+		margin: 20px 0 0 20px;
+	}
+	.header .btn {
+		display: inline-block;
+		font-size: 10px;
+	}
+	.header h1 {
+		font-size: 20px;
+	}
+	.header p {
+		font-size: 10px;
+	}
+}
+/* end header */
+/* services */
+.services {
+	padding: 90px 0;
+	text-align: center;
+}
+.services h2,
+.services h4 {
+	columns: #4c4c4c;
+	margin: 20px 0 20px;
+}
+.services p {
+	color: #737373;
+	font-size: 20px;
+	padding-bottom: 40px;
+}
+.services i {
+	height: 80px;
+	width: 80px;
+	font-size: 30px;
+	padding: 25px 25px;
+	border-radius: 50%;
+	background-color: #5b94ca;
+	color: #fff;
+}
+@media (max-width: "768px") {
+	.services {
+		padding: 30px;
+	}
+}
+/* end services */
+/* pricing */
+.pricing {
+	padding: 50px 0 60px;
+	text-align: center;
+	background-color: #3399ff;
+}
+.pricing h2,
+.pricing p {
+	color: #fff;
+}
+.pricing p:nth-child(2) {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	font-size: 20px;
+}
+.pricing .packages {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 30px;
+	background-color: #fff;
+}
+.packages {
+	height: auto;
+}
+.packages li {
+	display: block;
+	padding: 3px;
+}
+.packages p,
+.packages li {
+	color: #737373;
+}
+.packages button {
+	margin-top: 5px;
+}
+@media (max-width: 768) {
+	.pricing {
+		padding: 30px;
+	}
+	.packages {
+		width: 80%;
+		margin-left: 25px;
+	}
+}
+/* end pricing */
+/* team */
+.team {
+	padding: 50px 0 80px;
+	text-align: center;
+}
+.team b,
+.team h2,
+.team h4 {
+	margin: 28px 0 20px;
+	color: #4c4c4c;
+}
+.team p:nth-child(2) {
+	color: #737373;
+	font-size: 20px;
+}
+.team img {
+	height: 150px;
+	width: 150px;
+	margin-top: 80px;
+}
+.team i {
+	height: 38px;
+	width: 38px;
+	border-radius: 50%;
+	font-size: 17px;
+	line-height: 38px;
+	background-color: #a0db8e;
+	color: #fff;
+}
+.team a:hover i {
+	background-color: #709963;
+}
+/* end team */
+/* clients */
+.client {
+	padding: 50px 0 80px;
+	background-color: #3399ff;
+	color: #fff;
+	text-align: center;
+	border-top: 6px solid #9ac8f5;
+	border-bottom: 6px solid #9ac8f5;
+}
+.client h2 {
+	margin: 28px 0 20px;
+	color: #fff;
+}
+.client p:nth-child(2) {
+	color: #fff;
+	font-size: 20px;
+}
+.client img {
+	width: 200px;
+	height: 100px;
+	opacity: 0.6;
+	cursor: pointer;
+	margin: 40px 0;
+	transition: all 500ms ease-in-out;
+}
+.client li:hover img {
+	opacity: 1;
+}
+/* end clients */
+/* contact */
+.contact {
+	padding: 50px 0 58px;
+	text-align: center;
+}
+.contact p {
+	padding-bottom: 80px;
+	color: #737373;
+	font-size: 20px;
+}
+.contact h2 {
+	color: #4c4c4c;
+	margin: 20px 0 20px;
+}
+.contact .input-group {
+	margin-bottom: 25px;
+}
+.contact .form-control {
+	border-radius: 0 !important;
+}
+.contact span {
+	border-radius: 0 !important;
+}
+.contact .btn {
+	border-radius: 0;
+	width: 100%;
+	font-size: bold;
+	background-color: #fc0505;
+	color: #fff;
+	border: none;
+	outline: 0;
+	margin-top: 14px;
+}
+.contact .btn:hover {
+	background-color: #d60303;
+	color: #fff !important;
+}
+/* end contact */
+/* footer */
+.footer {
+	padding: 38px;
+	color: #cccccc;
+	background-color: #222222;
+}
+.footer .social {
+	font-size: 21px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+	margin-right: 12px;
+}
+.footer .social-margin {
+	margin-right: 8px;
+}
+.footer input {
+	width: 160px;
+	height: 40px;
+	padding: 5px;
+	border: none;
+	background-color: #cccccc;
+	color: black;
+	margin-bottom: 10px;
+}
+.footer .btn {
+	padding: 10px 16px 10px;
+	margin: -3px 0 0 5px;
+}
+/* end footer */
